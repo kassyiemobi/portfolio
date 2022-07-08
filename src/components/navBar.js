@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaGitlab,
+  FaLinkedin,
+} from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonFill } from "react-icons/bs";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +48,70 @@ const NavBar = () => {
       </ul>
 
       {/* social media icons */}
-      <div></div>
+      <div className=" hidden lg:flex fixed flex-col top-[35%] left-0">
+        <ul>
+          <li className="w-[160px] h-60px flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 py-1 px-4 rounded-sm">
+            <a
+              className="flex justify-between items-center w-full text-[#EEF0F2] "
+              href="https://www.linkedin.com/in/kasiemobi-omeh/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              LinkedIn
+              <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-60px flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700 py-1 px-4 rounded-sm">
+            <a
+              className="flex justify-between items-center w-full text-[#EEF0F2] "
+              href="https://github.com/kassyiemobi/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              GitHub
+              <FaGithub size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-60px flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#D2694B] py-1 px-4 rounded-sm">
+            <a
+              className="flex justify-between items-center w-full text-[#EEF0F2] "
+              href="https://gitlab.com/Kassyiemobi"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              GitLab
+              <FaGitlab size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-60px flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#028090] py-1 px-4 rounded-sm">
+            <a
+              className="flex justify-between items-center w-full text-[#EEF0F2] "
+              href="https://www.linkedin.com/in/kasiemobi-omeh/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              Email
+              <HiOutlineMail size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-60px flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] py-1 px-4 rounded-sm ">
+            <a
+              className="flex justify-between items-center w-full text-[#EEF0F2] "
+              href="omeh.kasie@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              Resume
+              <BsFillPersonFill size={30} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
