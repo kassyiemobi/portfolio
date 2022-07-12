@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,11 +21,40 @@ const NavBar = () => {
       </div>
 
       <ul className="md:flex hidden cursor-pointer">
-        <li className="px-4">Home</li>
-        <li className="px-4">About</li>
-        <li className="px-4">Skills</li>
-        <li className="px-4">Projects</li>
-        <li className="px-4">Contact</li>
+        <li className="px-4">
+          <Link to="home" smooth={true} duration="500">
+            {" "}
+            Home
+          </Link>
+        </li>
+        <li className="px-4">
+          {" "}
+          <Link to="about" smooth={true} duration="500">
+            {" "}
+            About
+          </Link>
+        </li>
+        <li className="px-4">
+          {" "}
+          <Link to="skills" smooth={true} duration="500">
+            {" "}
+            Skills
+          </Link>
+        </li>
+        <li className="px-4">
+          {" "}
+          <Link to="projects" smooth={true} duration="500">
+            {" "}
+            Projects
+          </Link>
+        </li>
+        <li className="px-4">
+          {" "}
+          <Link to="contact" smooth={true} duration="500">
+            {" "}
+            Contacts
+          </Link>
+        </li>
       </ul>
 
       {/*hamburger menu*/}
@@ -40,11 +70,51 @@ const NavBar = () => {
             : " absolute top-0 left-0 w-full cursor-pointer h-screen bg-[#020F4F] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl ">Home</li>
-        <li className="py-6 text-4xl ">About</li>
-        <li className="py-6 text-4xl ">Skills</li>
-        <li className="py-6 text-4xl ">Projects</li>
-        <li className="py-6 text-4xl ">Contact</li>
+        <li className="py-6 text-4xl ">
+          {" "}
+          <Link onClick={handleClick} to="home" smooth={true} duration="500">
+            {" "}
+            Home
+          </Link>
+        </li>
+        <li className="py-6 text-4xl ">
+          {" "}
+          <Link onClick={handleClick} to="about" smooth={true} duration="500">
+            {" "}
+            About
+          </Link>
+        </li>
+        <li className="py-6 text-4xl ">
+          {" "}
+          <Link onClick={handleClick} to="skills" smooth={true} duration="500">
+            {" "}
+            Skills
+          </Link>
+        </li>
+        <li className="py-6 text-4xl ">
+          {" "}
+          <Link
+            onClick={handleClick}
+            to="projects"
+            smooth={true}
+            duration="500"
+          >
+            {" "}
+            Projects
+          </Link>
+        </li>
+        <li className="py-6 text-4xl ">
+          {" "}
+          <Link
+            onClick={handleClick}
+            to="con tact"
+            smooth={true}
+            duration="500"
+          >
+            {" "}
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* social media icons */}

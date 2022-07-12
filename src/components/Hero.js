@@ -3,7 +3,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 const Hero = () => {
   return (
-    <div name="name" className="w-full h-screen bg-[#020F4F]">
+    <div name="home" className="w-full h-screen bg-[#020F4F]">
       {/* container */}
       <div className=" text-[#EEF0F2] max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-[#BF4E30] "> Hi, my name is </p>
