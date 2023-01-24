@@ -9,7 +9,7 @@ const Hero = () => {
       {/* container */}
       <div className=" text-[#EEF0F2] max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-[#BF4E30] font-bold "> Hi, my name is </p>
-        <h1 className="text-4xl sm:text-7xl font-bold">Kasiemobi Omeh</h1>
+        <h1 className="text-4xl sm:text-7xl font-bold">Kasiemobi Nwankwo</h1>
         <h2 className="text-4xl sm:text-7xl font-bold ">
           I'm a Front-end Developer
         </h2>

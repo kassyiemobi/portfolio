@@ -13,20 +13,22 @@ const About = () => {
           <div></div>
         </div>
         <div className="max-w-[1000] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-4xl font-bold ">
+          <div className="sm:text-right text-2xl font-bold ">
             <p>
-              Hi, I am Kasiemobi, nice to meet you. Please take a Look around
+              In building JavaScript applications, I'm equipped with just the
+              right tools, and can absolutely function independently of them to
+              deliver fast, resilient solutions optimized for scale performance.
             </p>
           </div>
           <div>
-            <p>
-              I love building solutions that help make the world a better place.
-              I find passion in being a part of a system that makes things work
-              better. I build website solutions for individuals,organizations
-              and large enterprises. I love to learn new things and I am always
-              looking to learn more. I am currently working as a Front-end
-              developer but I have some knowledge about back-end technology
-              tools and database.
+            <p className="text-2xl font-bold">
+              I love building solutions that help make processes better. I find
+              passion in being a part of a system that makes things work. My
+              past expirence are mostly in Ecommerce and data management
+              crafting thoughtful and inclusive experiences that adhere to web
+              standards for over a million merchants across the world. I am a
+              Front-end developer but I have basic knowledge on back-end
+              technology, tools and database management.
             </p>
           </div>
         </div>
