@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: center;
     height: 250px;
+    
 }
 .project-div:hover{
    background-image: linear-gradient(
